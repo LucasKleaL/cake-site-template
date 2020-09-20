@@ -22,6 +22,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 4500,
         
+        
     });
 
     $(".carousel").on("afterChange", function(){
