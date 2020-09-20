@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    function atualizarInformacoes(){
+        $("#nomeProduto").text($(".slick-center").data("name"));
+        $("#precoProduto").text($(".slick-center").data("price"));
+    }
+
+    $(".carousel").on("init", function(){
+        atualizarInformacoes();
+    });
+
     $(".carousel").slick({
 
         infinite: true,
@@ -11,22 +20,12 @@ $(document).ready(function(){
         prevArrow: $("#seta-prev"),
         nextArrow: $("#seta-next"),
         autoplay: true,
+        autoplaySpeed: 4500,
         
     });
 
     $(".carousel").on("afterChange", function(){
-        $("#nomeProduto").text($(".slick-center").data("name"));
-        $("#precoProduto").text($(".slick-center").data("price"));
-    });
-
-    $(".carousel").on('init', function(){
-        $("#nomeProduto").text($(".slick-center").data("name"));
-        $("#precoProduto").text($(".slick-center").data("price"));
-    });
-
-    $(".carousel").on('reInit', function(){
-        $("#nomeProduto").text($(".slick-center").data("name"));
-        $("#precoProduto").text($(".slick-center").data("price"));
+        atualizarInformacoes();
     });
 
 });
