@@ -1,8 +1,12 @@
 /* Estilo da pagina html */
 .html-style1{
     background-color: #ECE5CE;
+    
 }
 
+body{
+    height: 500px;
+}
 
 /* Estilo da navbar do topo da pagina */
 .nav-bar{
@@ -61,6 +65,14 @@
 
 
 /* Estilo dos texto */
+.h1-1{
+    color: white;
+    font-family: arial;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
 .logo-text{
     color: white;
     font-size: 30px;
@@ -87,6 +99,31 @@
     font-family: arial;
 }
 
+.texto-corpo{
+    color: black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+#description{
+    font-size: 25px;
+}
+
+.texto-titulo-rodape{
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.texto-rodape{
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+}
+
 
 /* Estilo do carousel (slider) */
 .carousel{
@@ -103,7 +140,9 @@
     width: 33%;
     height: 33%;
     border-radius: 10px;
-    padding-top: 100px;
+    position: relative;
+    padding-top: 150px;
+    
 }
 
 .carousel .carousel-img.slick-center{
@@ -132,10 +171,23 @@
 /* Estilo das divs */
 .div1{
     width: 100%;
-    height: 400px;
+    height: 700px;
     padding-top: 50px;
 }
 
 .div2{
+    width: 100%;
+    height: 100px;
+}
+
+.div3{
+    margin-top: 50px;
+    width: 100%;
+    height: 275px;
+    background-color: #774F38;
+    border-radius: 10px;
+}
+.div4{
+    height: 25px;
     width: 100%;
 }
