@@ -63,6 +63,21 @@ body{
     cursor: pointer;
 }
 
+.botao-socialmedia{
+    background-color: #E08E79;
+    border: 0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.botao-socialmedia:hover{
+    cursor: pointer;
+    background-color: #679b93;
+}
+
+
+
 
 /* Estilo dos texto */
 .h1-1{
